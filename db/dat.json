@@ -1,0 +1,43 @@
+{
+   "Product": [
+      {
+         "Id": "1",
+         "Name": "Pc",
+         "Price": "3000",
+        "desc": "Asus",
+	 "categoryId":"1",
+	"imageUrl":"https://cdn.vatanbilgisayar.com/Upload/PRODUCT/ASUS/thumb/v2-92406_large.jpg"
+         
+      },
+      {
+         "Id": "2",
+         "Name": "Pc",
+         "Price": "4000",
+         "desc": "MSI",
+	"categoryId":"1",
+	"imageUrl":"https://cdn.istanbulbilisim.com/p/0/msi-gl63-9sc-201xtr-notebook_293617.jpg"
+      },
+      {
+         "Id": "3",
+         "Name": "Mouse",
+         "Price": "200",
+         "desc": "razer",
+	"categoryId":"2",
+	"imageUrl":"https://www.qp.com.tr/pub/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/2/2/22-0286-razer_naga_trinity_oyuncu_mouse-qp-1.jpg"
+      }
+	
+
+   ],
+
+	"Categories": [
+	{
+	"id":"1",
+	"name":"Computer"
+	},
+	{
+	"id":"2",
+	"name":"Electronic"
+	}
+	]
+
+}

@@ -1,0 +1,38 @@
+{
+  "Product": [
+    {
+      "id": "1",
+      "name": "Pc",
+      "price": "3000",
+      "desc": "Asus",
+      "categoryId": "1",
+      "imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/ASUS/thumb/v2-92406_large.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Pc",
+      "price": "4000",
+      "desc": "MSI",
+      "categoryId": "1",
+      "imageUrl": "https://cdn.istanbulbilisim.com/p/0/msi-gl63-9sc-201xtr-notebook_293617.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Mouse",
+      "price": "200",
+      "desc": "razer",
+      "categoryId": "2",
+      "imageUrl": "https://cdn.akakce.com/razer/razer-deathadder-elite-optik-kablolu-oyuncu-mouse-z.jpg"
+    }
+  ],
+  "Categories": [
+    {
+      "id": "1",
+      "name": "Computer"
+    },
+    {
+      "id": "2",
+      "name": "Electronic"
+    }
+  ]
+}

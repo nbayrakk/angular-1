@@ -1,0 +1,29 @@
+<div *ngIf="addedProduct" class="alert alert-success" id="alert">
+  {{addedProduct}} sepete eklendi.
+
+</div>
+<div class="form-group">
+  <input class="form-control" id="exampleInputEmail1" [(ngModel)] = "text" placeholder="Aramak istediğinilen kelimeyi girin" >
+  <small *ngIf = "text" id="emailHelp" class="form-text text-muted">Aranılan Kelime <strong>{{text}} </strong></small>
+</div>
+<div class="container-fluid">
+  <div class="row">
+
+    <div *ngFor="let prod of produtcs | filter:text" class="card" style="width: 18rem; margin-top: 10px; margin-right: 5px;">
+      <img src="{{prod.imageUrl}}" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">{{prod.name}}</h5>
+        <p class="card-text">{{prod.desc}}</p>
+        <p class="card-text"> {{prod.price | currency}} </p>
+        <button routerLink="/product/{{prod.id}}" style="margin-right: 5px; " class="alert alert-info"> Detaylı
+          Bilgi</button>
+        <p></p>
+
+        <a (click)="addToCart(prod)" class="btn btn-success">Sepete Ekle</a>
+
+        <a style="margin-left: 5px;" (click)="del(prod)" class="btn btn-danger">Sil</a>
+      </div>
+    </div>
+
+  </div>
+</div>

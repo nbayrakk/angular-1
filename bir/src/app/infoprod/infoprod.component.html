@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+
+        <div class="card col-md-6" style="width: 18rem;">
+            <img src="{{product.imageUrl}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{product.name}}</h5>
+                <p class="card-text">{{product.desc}}</p>
+                <p>{{product.price | currency}}</p>
+                <a (click)="addToCart(product)" class="btn btn-primary">Sepete Ekle</a>
+            </div>
+        </div>
+        <div class="card col-md-6 " style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">ITEM</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Item Property</h6>
+                <p class="card-text">ITEM PROP</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </div>
+    <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" >Yorumlar</a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="card-body">
+            <form>
+                <textarea name="yorum" id="yorum" cols="100" rows="5" placeholder="Yorum Yaz"
+                    ([ngModel]) = "yeniYorum"
+                    
+                    >
+                </textarea>
+                <div class="py-1">
+                    <button class="btn btn-success pull-right"  >Ekle</button>
+                </div>
+            </form>
+          
+        </div>
+        
+      </div>
+      
+
+</div>

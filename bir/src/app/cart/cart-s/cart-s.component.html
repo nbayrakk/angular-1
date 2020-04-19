@@ -1,0 +1,10 @@
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Sepet: Toplam Tutar: {{totalCartItemPrice}}₺-Ürün adedi:{{totalCartItem}} 
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <button *ngFor="let item of cartItem" class="dropdown-item" type="button">
+            {{item.product.name}}  - {{item.quantity}}
+        </button>
+    </div>
+  </div>
